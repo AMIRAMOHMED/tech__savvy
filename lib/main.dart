@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tech_savvy/core/routs/app_routing.dart';
 
 void main() async {
   await SystemChrome.setPreferredOrientations(
@@ -19,6 +20,8 @@ class TechSavvy extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        onGenerateRoute:  AppRoutes().onGenerateRoute,
           title: 'Flutter Demo',
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
