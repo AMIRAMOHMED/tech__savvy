@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tech_savvy/core/extension/context_extension.dart';
+import 'package:tech_savvy/core/language/app_localizations_setup.dart';
 import 'package:tech_savvy/core/routs/app_routing.dart';
 import 'package:tech_savvy/core/style/theme/app_theme.dart';
 
@@ -28,6 +29,14 @@ class TechSavvy extends StatelessWidget {
         onGenerateRoute: AppRoutes().onGenerateRoute,
         title: 'Flutter Demo',
         theme: themLight(),
+        locale: 
+        const Locale('en'), 
+        supportedLocales:AppLocalizationsSetup.supportedLocales ,
+        localizationsDelegates:
+         AppLocalizationsSetup.localizationsDelegates,
+        localeResolutionCallback:
+         AppLocalizationsSetup.localeResolutionCallback,
+
         home: Scaffold(
           body: Center(
             child: Column(
