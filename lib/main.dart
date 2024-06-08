@@ -37,18 +37,21 @@ class TechSavvy extends StatelessWidget {
         localeResolutionCallback:
          AppLocalizationsSetup.localeResolutionCallback,
 
-        home: Scaffold(
-          body: Center(
-            child: Column(
-              children: [
-                const Text('Hello World'),
-                Builder(
-                  builder: (context) {
-                    final assets = context.assets;
-                    return Image.asset(assets.onBoarding1!);
-                  },
-                ),
-              ],
+        home: GestureDetector(
+          onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+          child: Scaffold(
+            body: Center(
+              child: Column(
+                children: [
+                  const Text('Hello World'),
+                  Builder(
+                    builder: (context) {
+                      final assets = context.assets;
+                      return Image.asset(assets.onBoarding1!);
+                    },
+                  ),
+                ],
+              ),
             ),
           ),
         ),
