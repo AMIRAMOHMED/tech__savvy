@@ -12,4 +12,6 @@ class ColorsLight {
   static const Color pink = Color(0xFFFFEBF0); // Pink
   static const Color lightPurple = Color(0xFFEAEAFF); // Light purple
   static const Color lightGrey = Color(0xFFF4F3FD); // Light grey
+
+  static const Color black = Colors.black;
 }

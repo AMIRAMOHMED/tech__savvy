@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tech_savvy/core/extension/context_extension.dart';
 import 'package:tech_savvy/core/language/app_localizations_setup.dart';
 import 'package:tech_savvy/core/routs/app_routing.dart';
 import 'package:tech_savvy/core/style/theme/app_theme.dart';
+import 'package:tech_savvy/features/onboarding/logic/cubit/onboarding_cubit.dart';
+import 'package:tech_savvy/features/onboarding/ui/screens/on_boarding_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,31 +31,17 @@ class TechSavvy extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         onGenerateRoute: AppRoutes().onGenerateRoute,
         title: 'Flutter Demo',
-        theme: themLight(),
-        locale: 
-        const Locale('en'), 
-        supportedLocales:AppLocalizationsSetup.supportedLocales ,
-        localizationsDelegates:
-         AppLocalizationsSetup.localizationsDelegates,
+        theme: themDark(),
+        locale: const Locale('ar'),
+        supportedLocales: AppLocalizationsSetup.supportedLocales,
+        localizationsDelegates: AppLocalizationsSetup.localizationsDelegates,
         localeResolutionCallback:
-         AppLocalizationsSetup.localeResolutionCallback,
-
+            AppLocalizationsSetup.localeResolutionCallback,
         home: GestureDetector(
           onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
-          child: Scaffold(
-            body: Center(
-              child: Column(
-                children: [
-                  const Text('Hello World'),
-                  Builder(
-                    builder: (context) {
-                      final assets = context.assets;
-                      return Image.asset(assets.onBoarding1!);
-                    },
-                  ),
-                ],
-              ),
-            ),
+          child: BlocProvider(
+            create: (_) => OnboardingCubit(),
+            child: const OnBoardingScreen(),
           ),
         ),
       ),

@@ -1,4 +1,12 @@
 {
-    "app_name": "Tech Savvy",
-    "language": "العربية"
+"app_name": "Tech Savvy",
+"language": "العربية",
+"free_trial_courses": "Numerous free trial courses",
+"free_courses_find_path":" Free courses for you to find your way to learning",
+"quick_easy_learning": "Quick and easy learning",
+"easy_fast_learning": "Easy and fast learning at any time to help you improve various skills",
+"create_study_plan": "Create your own study plan",
+"study_plan_motivated": "Study according to the study plan, make study more motivated",
+"sign_up": "Sign up",
+"log_in": "Log in"
 }

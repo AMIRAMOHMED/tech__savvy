@@ -15,4 +15,6 @@ class ColorsDark {
   static const Color steelGrey = Color(0xFF3E3E55); // Steel grey
   static const Color pink = Color(0xFFFFEBF0); // Pink
   static const Color yellow = Color(0xFFFFD301); // Yellow
+
+  static const Color black = Colors.black;
 }

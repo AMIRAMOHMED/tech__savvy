@@ -24,6 +24,9 @@ dependencies:
     ^5.9.1
     # Linter rules used by the Very Good Ventures
   very_good_analysis: ^5.1.0
+  # Bloc for state management
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.5
 
 dev_dependencies:
   # Lints for Flutter projects
