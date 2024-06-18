@@ -5,6 +5,6 @@ part 'app_state.freezed.dart';
 @freezed
 class AppState<T> with _$AppState<T> {
   const factory AppState.initial() = _Initial<T>;
-  const factory AppState.loading() = Loading<T>;
-  const factory AppState.success(T data) = Success<T>;
+  const factory AppState.changedTheme(T data) = changedTheme<T>;
+  const factory AppState.changedLanguage(T data) = changedLanguage<T>;
 }

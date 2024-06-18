@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tech_savvy/core/app/app_cubit/app_cubit.dart';
-import 'package:tech_savvy/core/app/app_cubit/app_state.dart';
 import 'package:tech_savvy/core/commanwidgets/text_widget.dart';
 import 'package:tech_savvy/core/extension/context_extension.dart';
 import 'package:tech_savvy/core/language/app_localizations.dart';
@@ -47,7 +46,13 @@ class OnBoardingScreen extends StatelessWidget {
                         iconSize: 30.sp,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          if (AppLocalizations.of(context)!.isEnLocale) {
+                            cubit.toArbic();
+                          } else {
+                            cubit.toEnglish();
+                          }
+                        },
                         icon: const Icon(FontAwesomeIcons.language),
                         color: context.color.seconderyFontColor,
                         iconSize: 30.sp,

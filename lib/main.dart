@@ -33,7 +33,7 @@ class TechSavvy extends StatelessWidget {
       create: (context) => AppCubit()
         ..chansngeTheme(
           sharedMood: SharedPref().getBoolean(PrefKeys.themeMode),
-        ),
+        )..getCurrentLangaue(),
       child: ScreenUtilInit(
         designSize: const Size(375, 812),
         minTextAdapt: true,
@@ -45,7 +45,7 @@ class TechSavvy extends StatelessWidget {
               onGenerateRoute: AppRoutes().onGenerateRoute,
               title: 'Flutter Demo',
               theme: appCubit.isDark ? themDark() :themLight(),
-              locale: const Locale('en'),
+              locale:  Locale(appCubit.currentLanguage),
               supportedLocales: AppLocalizationsSetup.supportedLocales,
               localizationsDelegates:
                   AppLocalizationsSetup.localizationsDelegates,

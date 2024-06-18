@@ -19,44 +19,44 @@ mixin _$AppState<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(T data) success,
+    required TResult Function(T data) changedTheme,
+    required TResult Function(T data) changedLanguage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(T data)? success,
+    TResult? Function(T data)? changedTheme,
+    TResult? Function(T data)? changedLanguage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(T data)? success,
+    TResult Function(T data)? changedTheme,
+    TResult Function(T data)? changedLanguage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
-    required TResult Function(Loading<T> value) loading,
-    required TResult Function(Success<T> value) success,
+    required TResult Function(changedTheme<T> value) changedTheme,
+    required TResult Function(changedLanguage<T> value) changedLanguage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(Loading<T> value)? loading,
-    TResult? Function(Success<T> value)? success,
+    TResult? Function(changedTheme<T> value)? changedTheme,
+    TResult? Function(changedLanguage<T> value)? changedLanguage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
-    TResult Function(Loading<T> value)? loading,
-    TResult Function(Success<T> value)? success,
+    TResult Function(changedTheme<T> value)? changedTheme,
+    TResult Function(changedLanguage<T> value)? changedLanguage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -119,8 +119,8 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(T data) success,
+    required TResult Function(T data) changedTheme,
+    required TResult Function(T data) changedLanguage,
   }) {
     return initial();
   }
@@ -129,8 +129,8 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(T data)? success,
+    TResult? Function(T data)? changedTheme,
+    TResult? Function(T data)? changedLanguage,
   }) {
     return initial?.call();
   }
@@ -139,8 +139,8 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(T data)? success,
+    TResult Function(T data)? changedTheme,
+    TResult Function(T data)? changedLanguage,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -153,8 +153,8 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
-    required TResult Function(Loading<T> value) loading,
-    required TResult Function(Success<T> value) success,
+    required TResult Function(changedTheme<T> value) changedTheme,
+    required TResult Function(changedLanguage<T> value) changedLanguage,
   }) {
     return initial(this);
   }
@@ -163,8 +163,8 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(Loading<T> value)? loading,
-    TResult? Function(Success<T> value)? success,
+    TResult? Function(changedTheme<T> value)? changedTheme,
+    TResult? Function(changedLanguage<T> value)? changedLanguage,
   }) {
     return initial?.call(this);
   }
@@ -173,8 +173,8 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
-    TResult Function(Loading<T> value)? loading,
-    TResult Function(Success<T> value)? success,
+    TResult Function(changedTheme<T> value)? changedTheme,
+    TResult Function(changedLanguage<T> value)? changedLanguage,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -189,128 +189,20 @@ abstract class _Initial<T> implements AppState<T> {
 }
 
 /// @nodoc
-abstract class _$$LoadingImplCopyWith<T, $Res> {
-  factory _$$LoadingImplCopyWith(
-          _$LoadingImpl<T> value, $Res Function(_$LoadingImpl<T>) then) =
-      __$$LoadingImplCopyWithImpl<T, $Res>;
-}
-
-/// @nodoc
-class __$$LoadingImplCopyWithImpl<T, $Res>
-    extends _$AppStateCopyWithImpl<T, $Res, _$LoadingImpl<T>>
-    implements _$$LoadingImplCopyWith<T, $Res> {
-  __$$LoadingImplCopyWithImpl(
-      _$LoadingImpl<T> _value, $Res Function(_$LoadingImpl<T>) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$LoadingImpl<T> implements Loading<T> {
-  const _$LoadingImpl();
-
-  @override
-  String toString() {
-    return 'AppState<$T>.loading()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingImpl<T>);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(T data) success,
-  }) {
-    return loading();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(T data)? success,
-  }) {
-    return loading?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(T data)? success,
-    required TResult orElse(),
-  }) {
-    if (loading != null) {
-      return loading();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial<T> value) initial,
-    required TResult Function(Loading<T> value) loading,
-    required TResult Function(Success<T> value) success,
-  }) {
-    return loading(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(Loading<T> value)? loading,
-    TResult? Function(Success<T> value)? success,
-  }) {
-    return loading?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial<T> value)? initial,
-    TResult Function(Loading<T> value)? loading,
-    TResult Function(Success<T> value)? success,
-    required TResult orElse(),
-  }) {
-    if (loading != null) {
-      return loading(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Loading<T> implements AppState<T> {
-  const factory Loading() = _$LoadingImpl<T>;
-}
-
-/// @nodoc
-abstract class _$$SuccessImplCopyWith<T, $Res> {
-  factory _$$SuccessImplCopyWith(
-          _$SuccessImpl<T> value, $Res Function(_$SuccessImpl<T>) then) =
-      __$$SuccessImplCopyWithImpl<T, $Res>;
+abstract class _$$changedThemeImplCopyWith<T, $Res> {
+  factory _$$changedThemeImplCopyWith(_$changedThemeImpl<T> value,
+          $Res Function(_$changedThemeImpl<T>) then) =
+      __$$changedThemeImplCopyWithImpl<T, $Res>;
   @useResult
   $Res call({T data});
 }
 
 /// @nodoc
-class __$$SuccessImplCopyWithImpl<T, $Res>
-    extends _$AppStateCopyWithImpl<T, $Res, _$SuccessImpl<T>>
-    implements _$$SuccessImplCopyWith<T, $Res> {
-  __$$SuccessImplCopyWithImpl(
-      _$SuccessImpl<T> _value, $Res Function(_$SuccessImpl<T>) _then)
+class __$$changedThemeImplCopyWithImpl<T, $Res>
+    extends _$AppStateCopyWithImpl<T, $Res, _$changedThemeImpl<T>>
+    implements _$$changedThemeImplCopyWith<T, $Res> {
+  __$$changedThemeImplCopyWithImpl(
+      _$changedThemeImpl<T> _value, $Res Function(_$changedThemeImpl<T>) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -318,7 +210,7 @@ class __$$SuccessImplCopyWithImpl<T, $Res>
   $Res call({
     Object? data = freezed,
   }) {
-    return _then(_$SuccessImpl<T>(
+    return _then(_$changedThemeImpl<T>(
       freezed == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
@@ -329,22 +221,22 @@ class __$$SuccessImplCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$SuccessImpl<T> implements Success<T> {
-  const _$SuccessImpl(this.data);
+class _$changedThemeImpl<T> implements changedTheme<T> {
+  const _$changedThemeImpl(this.data);
 
   @override
   final T data;
 
   @override
   String toString() {
-    return 'AppState<$T>.success(data: $data)';
+    return 'AppState<$T>.changedTheme(data: $data)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SuccessImpl<T> &&
+            other is _$changedThemeImpl<T> &&
             const DeepCollectionEquality().equals(other.data, data));
   }
 
@@ -355,39 +247,40 @@ class _$SuccessImpl<T> implements Success<T> {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$SuccessImplCopyWith<T, _$SuccessImpl<T>> get copyWith =>
-      __$$SuccessImplCopyWithImpl<T, _$SuccessImpl<T>>(this, _$identity);
+  _$$changedThemeImplCopyWith<T, _$changedThemeImpl<T>> get copyWith =>
+      __$$changedThemeImplCopyWithImpl<T, _$changedThemeImpl<T>>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(T data) success,
+    required TResult Function(T data) changedTheme,
+    required TResult Function(T data) changedLanguage,
   }) {
-    return success(data);
+    return changedTheme(data);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(T data)? success,
+    TResult? Function(T data)? changedTheme,
+    TResult? Function(T data)? changedLanguage,
   }) {
-    return success?.call(data);
+    return changedTheme?.call(data);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(T data)? success,
+    TResult Function(T data)? changedTheme,
+    TResult Function(T data)? changedLanguage,
     required TResult orElse(),
   }) {
-    if (success != null) {
-      return success(data);
+    if (changedTheme != null) {
+      return changedTheme(data);
     }
     return orElse();
   }
@@ -396,42 +289,183 @@ class _$SuccessImpl<T> implements Success<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
-    required TResult Function(Loading<T> value) loading,
-    required TResult Function(Success<T> value) success,
+    required TResult Function(changedTheme<T> value) changedTheme,
+    required TResult Function(changedLanguage<T> value) changedLanguage,
   }) {
-    return success(this);
+    return changedTheme(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(Loading<T> value)? loading,
-    TResult? Function(Success<T> value)? success,
+    TResult? Function(changedTheme<T> value)? changedTheme,
+    TResult? Function(changedLanguage<T> value)? changedLanguage,
   }) {
-    return success?.call(this);
+    return changedTheme?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
-    TResult Function(Loading<T> value)? loading,
-    TResult Function(Success<T> value)? success,
+    TResult Function(changedTheme<T> value)? changedTheme,
+    TResult Function(changedLanguage<T> value)? changedLanguage,
     required TResult orElse(),
   }) {
-    if (success != null) {
-      return success(this);
+    if (changedTheme != null) {
+      return changedTheme(this);
     }
     return orElse();
   }
 }
 
-abstract class Success<T> implements AppState<T> {
-  const factory Success(final T data) = _$SuccessImpl<T>;
+abstract class changedTheme<T> implements AppState<T> {
+  const factory changedTheme(final T data) = _$changedThemeImpl<T>;
 
   T get data;
   @JsonKey(ignore: true)
-  _$$SuccessImplCopyWith<T, _$SuccessImpl<T>> get copyWith =>
+  _$$changedThemeImplCopyWith<T, _$changedThemeImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$changedLanguageImplCopyWith<T, $Res> {
+  factory _$$changedLanguageImplCopyWith(_$changedLanguageImpl<T> value,
+          $Res Function(_$changedLanguageImpl<T>) then) =
+      __$$changedLanguageImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({T data});
+}
+
+/// @nodoc
+class __$$changedLanguageImplCopyWithImpl<T, $Res>
+    extends _$AppStateCopyWithImpl<T, $Res, _$changedLanguageImpl<T>>
+    implements _$$changedLanguageImplCopyWith<T, $Res> {
+  __$$changedLanguageImplCopyWithImpl(_$changedLanguageImpl<T> _value,
+      $Res Function(_$changedLanguageImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$changedLanguageImpl<T>(
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as T,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$changedLanguageImpl<T> implements changedLanguage<T> {
+  const _$changedLanguageImpl(this.data);
+
+  @override
+  final T data;
+
+  @override
+  String toString() {
+    return 'AppState<$T>.changedLanguage(data: $data)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$changedLanguageImpl<T> &&
+            const DeepCollectionEquality().equals(other.data, data));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$changedLanguageImplCopyWith<T, _$changedLanguageImpl<T>> get copyWith =>
+      __$$changedLanguageImplCopyWithImpl<T, _$changedLanguageImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function(T data) changedTheme,
+    required TResult Function(T data) changedLanguage,
+  }) {
+    return changedLanguage(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(T data)? changedTheme,
+    TResult? Function(T data)? changedLanguage,
+  }) {
+    return changedLanguage?.call(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function(T data)? changedTheme,
+    TResult Function(T data)? changedLanguage,
+    required TResult orElse(),
+  }) {
+    if (changedLanguage != null) {
+      return changedLanguage(data);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(changedTheme<T> value) changedTheme,
+    required TResult Function(changedLanguage<T> value) changedLanguage,
+  }) {
+    return changedLanguage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(changedTheme<T> value)? changedTheme,
+    TResult? Function(changedLanguage<T> value)? changedLanguage,
+  }) {
+    return changedLanguage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(changedTheme<T> value)? changedTheme,
+    TResult Function(changedLanguage<T> value)? changedLanguage,
+    required TResult orElse(),
+  }) {
+    if (changedLanguage != null) {
+      return changedLanguage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class changedLanguage<T> implements AppState<T> {
+  const factory changedLanguage(final T data) = _$changedLanguageImpl<T>;
+
+  T get data;
+  @JsonKey(ignore: true)
+  _$$changedLanguageImplCopyWith<T, _$changedLanguageImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
