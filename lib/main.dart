@@ -32,7 +32,7 @@ class TechSavvy extends StatelessWidget {
         onGenerateRoute: AppRoutes().onGenerateRoute,
         title: 'Flutter Demo',
         theme: themDark(),
-        locale: const Locale('ar'),
+        locale: const Locale('en'),
         supportedLocales: AppLocalizationsSetup.supportedLocales,
         localizationsDelegates: AppLocalizationsSetup.localizationsDelegates,
         localeResolutionCallback:
