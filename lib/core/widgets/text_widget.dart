@@ -23,6 +23,7 @@ class TextApp extends StatelessWidget {
       text,
       softWrap: softWrap,
       style: style,
+      
       overflow: textOverflow,
       textAlign: textAlign,
       maxLines: maxLines,

@@ -10,4 +10,5 @@ class LangKeys {
   static const String studyPlanMotivated = 'study_plan_motivated';
   static const String signUp = 'sign_up';
   static const String logIn = 'log_in';
+  static const String skip = 'skip';
 }
