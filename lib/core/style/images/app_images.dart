@@ -5,4 +5,5 @@ class AppImages {
   static const String onBoarding2Light = 'assets/images/onboarding/on_boarding_2_light.png';
   static const String onBoarding2Dark = 'assets/images/onboarding/on_boarding_2_Dark.png';
   static const String onBoarding3 = 'assets/images/onboarding/on_boarding_3.png';
+  static const String onBoarding3Dark = 'assets/images/onboarding/on_boarding_3_dark.png';
 }

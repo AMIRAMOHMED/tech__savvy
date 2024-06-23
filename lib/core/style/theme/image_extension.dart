@@ -41,16 +41,16 @@ class MyAssets extends ThemeExtension<MyAssets> {
     );
   }
 
-  static const MyAssets dark = MyAssets(
+  static const MyAssets light = MyAssets(
     onBoarding1: AppImages.onBoarding1Light,
     onBoarding2: AppImages.onBoarding2Light,
     onBoarding3: AppImages.onBoarding3,
 
   );
-  static const MyAssets light = MyAssets(
+  static const MyAssets dark = MyAssets(
     onBoarding1: AppImages.onBoarding1Dark,
     onBoarding2: AppImages.onBoarding2Dark,
-        onBoarding3: AppImages.onBoarding3,
+    onBoarding3: AppImages.onBoarding3Dark,
 
   );
 }

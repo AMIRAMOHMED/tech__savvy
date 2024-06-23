@@ -1,1 +1,14 @@
-const String home = '/';
+const String onBoarding = '/';
+
+const String login = '/login';
+
+const String singUp = '/singUp';
+
+
+
+
+
+
+
+
+

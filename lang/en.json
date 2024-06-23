@@ -1,4 +1,21 @@
 {
-    "app_name": "Tech Savvy",
-    "language": "العربية"
-}
+    "app_name": "Learn Easily",
+    "language": "English",
+    "free_trial_courses": "Multiple Free Trial Courses",
+    "free_courses_find_path": "Free courses to help you find your learning path",
+    "quick_easy_learning": "Quick and Easy Learning",
+    "easy_fast_learning": "Easy and Fast Learning Anytime to Help Improve Various Skills",
+    "create_study_plan": "Create Your Own Study Plan",
+    "study_plan_motivated": "Studying according to a study plan makes learning more motivating",
+    "sign_up": "Sign Up",
+    "log_in": "Log In",
+    "skip": "Skip",
+    "enter_details": "Enter your details below & free sign up",
+    "your_email": "Your Email",
+    "password": "Password",
+    "create_account": "Create Account",
+    "agree_terms": "By creating an account you have to agree with our terms & conditions.",
+    "already_have_account": "Already have an account?",
+    "forget_password": "Forget Password?",
+    "dont_have_account": "Don’t have an account?"
+  }

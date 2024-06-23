@@ -9,34 +9,33 @@ environment:
   sdk: ">=3.3.3 <4.0.0"
 
 dependencies:
-  flutter:
-    sdk:
-      flutter
-      # Cupertino icons for iOS design
+  bloc: ^8.1.4
+  build_runner: ^2.4.11
   cupertino_icons: ^1.0.6
-  flutter_localizations:
-    # Provides localization support
+  flutter:
     sdk: flutter
-
-    # A Flutter plugin for adapting screen and font size
-
-  flutter_screenutil:
-    ^5.9.1
-    # Linter rules used by the Very Good Ventures
+  flutter_bloc: ^8.1.5
+  flutter_localizations:
+    sdk: flutter
+  flutter_screenutil: ^5.9.1
+  font_awesome_flutter: ^10.7.0
+  freezed: ^2.4.5
+  freezed_annotation: ^2.4.1
+  get_it: ^7.7.0
+  shared_preferences: ^2.2.3
   very_good_analysis: ^5.1.0
 
 dev_dependencies:
-  # Lints for Flutter projects
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
+
 flutter:
   assets:
     # Path to onboarding images
     - assets/images/onboarding/
     - lang/ar.json
     - lang/en.json
-
 
   fonts:
     # Arabic fonts

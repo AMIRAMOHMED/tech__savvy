@@ -4,69 +4,69 @@ import 'package:tech_savvy/core/style/color/colors_light.dart';
 
 class MyColors extends ThemeExtension<MyColors> {
   const MyColors({
-    required this.lightPurple,
-    required this.white,
-    required this.blue,
-    required this.grey,
-    required this.lightGrey,
-    required this.palePurple,
-    required this.darkGrey,
-    required this.navyBlue,
-    required this.orange,
-    required this.lightLavender,
-    required this.deepPurple,
-    required this.steelGrey,
-    required this.pink,
-    required this.yellow,
+    required this.backGround2,
+    required this.mainFontColor2,
+    required this.textButtomColor2,
+    required this.buttomColor,
+    required this.textButtomColor,
+    required this.hintTextColor,
+    required this.backGround,
+    required this.mainFontColor,
+    required this.primaryFontColor,
+    required this.seconderyFontColor,
+    required this.blueColor,
+    required this.fillTextFeildColor,
+    required this.borderColor,
+    required this.backGround3,
   });
 
-  final Color? lightPurple;
-  final Color? white;
-  final Color? blue;
-  final Color? grey;
-  final Color? lightGrey;
-  final Color? palePurple;
-  final Color? darkGrey;
-  final Color? navyBlue;
-  final Color? orange;
-  final Color? lightLavender;
-  final Color? deepPurple;
-  final Color? steelGrey;
-  final Color? pink;
-  final Color? yellow;
+  final Color? backGround;
+  final Color? fillTextFeildColor;
+  final Color? borderColor;
+  final Color? mainFontColor;
+  final Color? primaryFontColor;
+  final Color? blueColor;
+  final Color? seconderyFontColor;
+  final Color? textButtomColor;
+  final Color? hintTextColor;
+  final Color? buttomColor;
+  final Color? textButtomColor2;
+  final Color? backGround2;
+  final Color? mainFontColor2;
+  final Color? backGround3;
 
   @override
   ThemeExtension<MyColors> copyWith({
-    Color? lightPurple,
-    Color? white,
-    Color? blue,
-    Color? grey,
-    Color? lightGrey,
-    Color? palePurple,
-    Color? darkGrey,
-    Color? navyBlue,
-    Color? orange,
-    Color? lightLavender,
-    Color? deepPurple,
-    Color? steelGrey,
-    Color? pink,
-    Color? yellow,
+    Color? textButtomColor2,
+    Color? borderColor,
+    Color? backGround,
+    Color? mainFontColor,
+    Color? fillTextFeildColor,
+    Color? primaryFontColor,
+    Color? seconderyFontColor,
+    Color? blueColor,
+    Color? textButtomColor,
+    Color? hintTextColor,
+    Color? buttomColor,
+    Color? backGround2,
+    Color? mainFontColor2,
+    Color? backGround3,
   }) {
     return MyColors(
-      lightPurple: lightPurple ?? this.lightPurple,
-      white: white ?? this.white,
-      blue: blue ?? this.blue,
-      grey: grey ?? this.grey,
-      lightGrey: lightGrey ?? this.lightGrey,
-      palePurple: palePurple ?? this.palePurple,
-      darkGrey: darkGrey ?? this.darkGrey,
-      navyBlue: navyBlue ?? this.navyBlue,
-      orange: orange ?? this.orange,
-      lightLavender: lightLavender ?? this.lightLavender,
-      deepPurple: deepPurple ?? this.deepPurple,
-      steelGrey: steelGrey ?? this.steelGrey,
-      pink: pink ?? this.pink,
-      yellow: yellow ?? this.yellow,
+      backGround3: backGround3 ?? this.backGround3,
+      fillTextFeildColor: fillTextFeildColor ?? this.fillTextFeildColor,
+      borderColor: borderColor ?? this.borderColor,
+      backGround2: backGround2 ?? this.backGround2,
+      mainFontColor2: mainFontColor2 ?? this.mainFontColor2,
+      textButtomColor2: textButtomColor2 ?? this.textButtomColor2,
+      buttomColor: buttomColor ?? this.buttomColor,
+      backGround: backGround ?? this.backGround,
+      mainFontColor: mainFontColor ?? this.mainFontColor,
+      primaryFontColor: primaryFontColor ?? this.primaryFontColor,
+      seconderyFontColor: seconderyFontColor ?? this.seconderyFontColor,
+      blueColor: blueColor ?? this.blueColor,
+      textButtomColor: textButtomColor ?? this.textButtomColor,
+      hintTextColor: hintTextColor ?? this.hintTextColor,
     );
   }
 
@@ -80,54 +80,66 @@ class MyColors extends ThemeExtension<MyColors> {
     }
 
     return MyColors(
-      lightPurple: Color.lerp(lightPurple, other.lightPurple, t),
-      white: Color.lerp(white, other.white, t),
-      blue: Color.lerp(blue, other.blue, t),
-      grey: Color.lerp(grey, other.grey, t),
-      lightGrey: Color.lerp(lightGrey, other.lightGrey, t),
-      palePurple: Color.lerp(palePurple, other.palePurple, t),
-      darkGrey: Color.lerp(darkGrey, other.darkGrey, t),
-      navyBlue: Color.lerp(navyBlue, other.navyBlue, t),
-      orange: Color.lerp(orange, other.orange, t),
-      lightLavender: Color.lerp(lightLavender, other.lightLavender, t),
-      deepPurple: Color.lerp(deepPurple, other.deepPurple, t),
-      steelGrey: Color.lerp(steelGrey, other.steelGrey, t),
-      pink: Color.lerp(pink, other.pink, t),
-      yellow: Color.lerp(yellow, other.yellow, t),
+      backGround3: Color.lerp(backGround3, other.backGround3, t),
+      fillTextFeildColor: Color.lerp(
+        fillTextFeildColor,
+        other.fillTextFeildColor,
+        t,
+      ),
+      borderColor: Color.lerp(borderColor, other.borderColor, t),
+      textButtomColor2: Color.lerp(textButtomColor2, other.textButtomColor2, t),
+      buttomColor: Color.lerp(buttomColor, other.buttomColor, t),
+      backGround2: Color.lerp(backGround2, other.backGround2, t),
+      mainFontColor2: Color.lerp(mainFontColor2, other.mainFontColor2, t),
+      backGround: Color.lerp(backGround, other.backGround, t),
+      mainFontColor: Color.lerp(mainFontColor, other.mainFontColor, t),
+      primaryFontColor: Color.lerp(
+        primaryFontColor,
+        other.primaryFontColor,
+        t,
+      ),
+      seconderyFontColor: Color.lerp(
+        seconderyFontColor,
+        other.seconderyFontColor,
+        t,
+      ),
+      blueColor: Color.lerp(blueColor, other.blueColor, t),
+      textButtomColor: Color.lerp(textButtomColor, other.textButtomColor, t),
+      hintTextColor: Color.lerp(hintTextColor, other.hintTextColor, t),
     );
   }
 
   static const MyColors dark = MyColors(
-    lightPurple: ColorsDark.lightPurple,
-    white: ColorsDark.white,
-    blue: ColorsDark.blue,
-    grey: ColorsDark.grey,
-    lightGrey: ColorsDark.lightGrey,
-    palePurple: ColorsDark.palePurple,
-    darkGrey: ColorsDark.darkGrey,
-    navyBlue: ColorsDark.navyBlue,
-    orange: ColorsDark.orange,
-    lightLavender: ColorsDark.lightLavender,
-    deepPurple: ColorsDark.deepPurple,
-    steelGrey: ColorsDark.steelGrey,
-    pink: ColorsDark.pink,
-    yellow: ColorsDark.yellow,
+    borderColor: ColorsDark.steelGrey,
+    backGround2: ColorsDark.darkGrey,
+    textButtomColor2: ColorsDark.lightGrey,
+    backGround: ColorsDark.navyBlue,
+    mainFontColor: ColorsDark.lightPurple,
+    primaryFontColor: ColorsDark.white,
+    seconderyFontColor: ColorsDark.lightGrey,
+    blueColor: ColorsDark.blue,
+    textButtomColor: ColorsDark.lightGrey,
+    hintTextColor: ColorsDark.palePurple,
+    buttomColor: ColorsDark.grey,
+    mainFontColor2: ColorsDark.white,
+    backGround3: ColorsLight.navyBlue,
+    fillTextFeildColor: ColorsDark.steelGrey,
   );
 
   static const MyColors light = MyColors(
-    lightPurple: ColorsLight.lightPurple,
-    white: ColorsLight.white,
-    blue: ColorsLight.blue,
-    grey: ColorsLight.grey,
-    lightGrey: ColorsLight.lightGrey,
-    palePurple: ColorsLight.palePurple,
-    darkGrey: ColorsDark.darkGrey,
-    navyBlue: ColorsLight.navyBlue,
-    orange: ColorsLight.orange,
-    lightLavender: ColorsLight.lightLavender,
-    deepPurple: ColorsLight.deepPurple,
-    steelGrey: ColorsDark.steelGrey,
-    pink: ColorsLight.pink,
-    yellow: ColorsDark.yellow,
+    fillTextFeildColor: ColorsDark.white,
+    backGround3: ColorsLight.lighterGray,
+    borderColor: ColorsLight.palePurple,
+    backGround2: ColorsLight.white,
+    backGround: ColorsLight.white,
+    mainFontColor: ColorsLight.black,
+    primaryFontColor: ColorsLight.grey,
+    seconderyFontColor: ColorsLight.blue,
+    blueColor: ColorsLight.blue,
+    textButtomColor: ColorsLight.white,
+    hintTextColor: ColorsLight.grey,
+    buttomColor: ColorsLight.white,
+    textButtomColor2: ColorsLight.blue,
+    mainFontColor2: ColorsLight.black,
   );
 }
