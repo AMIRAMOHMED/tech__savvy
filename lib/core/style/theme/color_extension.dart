@@ -4,6 +4,8 @@ import 'package:tech_savvy/core/style/color/colors_light.dart';
 
 class MyColors extends ThemeExtension<MyColors> {
   const MyColors({
+    required this.backGround2,
+    required this.mainFontColor2,
     required this.textButtomColor2,
     required this.buttomColor,
     required this.textButtomColor,
@@ -13,9 +15,14 @@ class MyColors extends ThemeExtension<MyColors> {
     required this.primaryFontColor,
     required this.seconderyFontColor,
     required this.blueColor,
+    required this.fillTextFeildColor,
+    required this.borderColor,
+    required this.backGround3,
   });
 
   final Color? backGround;
+  final Color? fillTextFeildColor;
+  final Color? borderColor;
   final Color? mainFontColor;
   final Color? primaryFontColor;
   final Color? blueColor;
@@ -24,20 +31,33 @@ class MyColors extends ThemeExtension<MyColors> {
   final Color? hintTextColor;
   final Color? buttomColor;
   final Color? textButtomColor2;
+  final Color? backGround2;
+  final Color? mainFontColor2;
+  final Color? backGround3;
 
   @override
   ThemeExtension<MyColors> copyWith({
     Color? textButtomColor2,
+    Color? borderColor,
     Color? backGround,
     Color? mainFontColor,
+    Color? fillTextFeildColor,
     Color? primaryFontColor,
     Color? seconderyFontColor,
     Color? blueColor,
     Color? textButtomColor,
     Color? hintTextColor,
     Color? buttomColor,
+    Color? backGround2,
+    Color? mainFontColor2,
+    Color? backGround3,
   }) {
     return MyColors(
+      backGround3: backGround3 ?? this.backGround3,
+      fillTextFeildColor: fillTextFeildColor ?? this.fillTextFeildColor,
+      borderColor: borderColor ?? this.borderColor,
+      backGround2: backGround2 ?? this.backGround2,
+      mainFontColor2: mainFontColor2 ?? this.mainFontColor2,
       textButtomColor2: textButtomColor2 ?? this.textButtomColor2,
       buttomColor: buttomColor ?? this.buttomColor,
       backGround: backGround ?? this.backGround,
@@ -60,8 +80,17 @@ class MyColors extends ThemeExtension<MyColors> {
     }
 
     return MyColors(
+      backGround3: Color.lerp(backGround3, other.backGround3, t),
+      fillTextFeildColor: Color.lerp(
+        fillTextFeildColor,
+        other.fillTextFeildColor,
+        t,
+      ),
+      borderColor: Color.lerp(borderColor, other.borderColor, t),
       textButtomColor2: Color.lerp(textButtomColor2, other.textButtomColor2, t),
       buttomColor: Color.lerp(buttomColor, other.buttomColor, t),
+      backGround2: Color.lerp(backGround2, other.backGround2, t),
+      mainFontColor2: Color.lerp(mainFontColor2, other.mainFontColor2, t),
       backGround: Color.lerp(backGround, other.backGround, t),
       mainFontColor: Color.lerp(mainFontColor, other.mainFontColor, t),
       primaryFontColor: Color.lerp(
@@ -81,6 +110,8 @@ class MyColors extends ThemeExtension<MyColors> {
   }
 
   static const MyColors dark = MyColors(
+    borderColor: ColorsDark.steelGrey,
+    backGround2: ColorsDark.darkGrey,
     textButtomColor2: ColorsDark.lightGrey,
     backGround: ColorsDark.navyBlue,
     mainFontColor: ColorsDark.lightPurple,
@@ -90,9 +121,16 @@ class MyColors extends ThemeExtension<MyColors> {
     textButtomColor: ColorsDark.lightGrey,
     hintTextColor: ColorsDark.palePurple,
     buttomColor: ColorsDark.grey,
+    mainFontColor2: ColorsDark.white,
+    backGround3: ColorsLight.navyBlue,
+    fillTextFeildColor: ColorsDark.steelGrey,
   );
 
   static const MyColors light = MyColors(
+    fillTextFeildColor: ColorsDark.white,
+    backGround3: ColorsLight.lighterGray,
+    borderColor: ColorsLight.palePurple,
+    backGround2: ColorsLight.white,
     backGround: ColorsLight.white,
     mainFontColor: ColorsLight.black,
     primaryFontColor: ColorsLight.grey,
@@ -100,6 +138,8 @@ class MyColors extends ThemeExtension<MyColors> {
     blueColor: ColorsLight.blue,
     textButtomColor: ColorsLight.white,
     hintTextColor: ColorsLight.grey,
-    buttomColor: ColorsLight.white, textButtomColor2: ColorsLight.blue,
+    buttomColor: ColorsLight.white,
+    textButtomColor2: ColorsLight.blue,
+    mainFontColor2: ColorsLight.black,
   );
 }

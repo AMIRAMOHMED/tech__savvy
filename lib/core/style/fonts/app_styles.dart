@@ -13,6 +13,17 @@ class AppStyles {
     );
   }
 
+
+ static TextStyle font700Main32(BuildContext context) {
+    return context.textStyle.copyWith(
+      fontWeight: FontWeightHelper.bold,
+      fontFamily: FontFamilyHelper.geLocalozedFontFamily(),
+      fontSize: 32.sp,
+    );
+  }
+
+
+
   static TextStyle font400primary16(BuildContext context) {
     return context.textStyle.copyWith(
       fontWeight: FontWeightHelper.regular,
@@ -34,6 +45,13 @@ class AppStyles {
       fontWeight: FontWeightHelper.medium,
       fontFamily: FontFamilyHelper.geLocalozedFontFamily(),
       fontSize: 16.sp,
+    );
+  }
+  static TextStyle font400primary12(BuildContext context) {
+    return context.textStyle.copyWith(
+      fontWeight: FontWeightHelper.regular,
+      fontFamily: FontFamilyHelper.geLocalozedFontFamily(),
+      fontSize: 12.sp,
     );
   }
 }

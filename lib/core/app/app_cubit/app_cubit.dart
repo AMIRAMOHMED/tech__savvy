@@ -3,34 +3,47 @@ import 'package:tech_savvy/core/app/app_cubit/app_state.dart';
 import 'package:tech_savvy/core/shared_perfernce/shared_key.dart';
 import 'package:tech_savvy/core/shared_perfernce/shared_perfernce.dart';
 
-// ignore: strict_raw_type
 class AppCubit extends Cubit<AppState> {
-  AppCubit() : super(const AppState.initial());
+  AppCubit() : super(const AppState.initial()) {
+    _initialize();
+  }
+
   bool isDark = true;
   String currentLanguage = 'en';
+
+  Future <void>  _initialize() async {
+    final sharedMood = SharedPref().getBoolean(PrefKeys.themeMode);
+    if (sharedMood != null) {
+      isDark = sharedMood;
+    } else {
+      isDark = true; 
+    }
+    emit(AppState.changedTheme(isDark));
+
+    final result = SharedPref().containPreference(PrefKeys.language)
+        ? SharedPref().getString(PrefKeys.language)
+        : 'en';
+    currentLanguage = result!;
+    emit(AppState.changedLanguage(currentLanguage));
+  }
 
   Future<void> chansngeTheme({
     bool? sharedMood,
   }) async {
     if (sharedMood != null) {
-      sharedMood = isDark;
-
-      emit(AppState.changedTheme(isDark));
+      isDark = sharedMood;
     } else {
-      await SharedPref().setBoolean(PrefKeys.themeMode, isDark).then((value) {
-        isDark = !isDark;
-        emit(AppState.changedTheme(isDark));
-      });
+      isDark = !isDark;
     }
+    await SharedPref().setBoolean(PrefKeys.themeMode, isDark);
+    emit(AppState.changedTheme(isDark));
   }
 
   void getCurrentLangaue() {
     final result = SharedPref().containPreference(PrefKeys.language)
         ? SharedPref().getString(PrefKeys.language)
         : 'en';
-
     currentLanguage = result!;
-
     emit(AppState.changedLanguage(currentLanguage));
   }
 

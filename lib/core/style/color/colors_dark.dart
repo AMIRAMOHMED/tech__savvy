@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ColorsDark {
   static const Color lightPurple = Color(0xFFEAEAFF); // Light purple
   static const Color white = Color(0xFFFFFFFF); // White
-  static const Color blue = Color(0xFF3D5CFF); // Blue (repeated)
+  static const Color blue = Color.fromRGBO(61, 92, 255, 1); // Blue (repeated)
   static const Color grey = Color(0xFF858597); // Grey
   static const Color lightGrey = Color(0xFFF4F3FD); // Light grey
   static const Color palePurple = Color(0xFFB8B8D2); // Pale purple
@@ -18,3 +18,5 @@ class ColorsDark {
 
   static const Color black = Colors.black;
 }
+
+
