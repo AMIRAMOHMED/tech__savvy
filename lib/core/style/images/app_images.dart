@@ -18,4 +18,8 @@ class AppImages {
   static const String homeLightBluePattern =
       'assets/images/home/home_light_blue_pattern.png';
   static const String illustration = 'assets/images/home/illustration.png';
+  static const String groupAvatar1 = 'assets/images/home/group_avatar_2.png';
+  static const String groupAvatar2 = 'assets/images/home/group_avatar_1.png';
+
+  static const String groupAvatar3 = 'assets/images/home/group_avatar_3.png';
 }

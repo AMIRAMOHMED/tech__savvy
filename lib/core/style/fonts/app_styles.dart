@@ -69,4 +69,12 @@ static TextStyle font700Main26(BuildContext context) {
       fontSize: 12.sp,
     );
   }
+
+    static TextStyle font500primary18(BuildContext context) {
+    return context.textStyle.copyWith(
+      fontWeight: FontWeightHelper.medium,
+      fontFamily: FontFamilyHelper.geLocalozedFontFamily(),
+      fontSize: 18.sp,
+    );
+  }
 }
