@@ -9,6 +9,7 @@ import 'package:tech_savvy/core/style/fonts/app_styles.dart';
 import 'package:tech_savvy/core/widgets/app_text.dart';
 import 'package:tech_savvy/core/widgets/app_text_buttom.dart';
 import 'package:tech_savvy/core/widgets/app_text_form_field.dart';
+import 'package:tech_savvy/features/home/ui/screens/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -111,7 +112,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         AppTextButton(
                           buttonWidth: 250.w,
                           buttonHeight: 60.h,
-                          onPressed: () {},
+                          onPressed: () {
+                            context.pushReplacementNamed(home);
+                          },
                           buttonText: context.translate(LangKeys.logIn),
                           textStyle: AppStyles.font500primary16(context)
                               .copyWith(color: context.color.textButtomColor),

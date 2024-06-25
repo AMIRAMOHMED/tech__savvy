@@ -13,6 +13,21 @@ class AppStyles {
     );
   }
 
+static TextStyle font700Main26(BuildContext context) {
+    return context.textStyle.copyWith(
+      fontWeight: FontWeightHelper.bold,
+      fontFamily: FontFamilyHelper.geLocalozedFontFamily(),
+      fontSize: 26.sp,
+    );
+  }
+  static TextStyle font700Main12(BuildContext context) {
+    return context.textStyle.copyWith(
+      fontWeight: FontWeightHelper.bold,
+      fontFamily: FontFamilyHelper.geLocalozedFontFamily(),
+      fontSize: 12.sp,
+    );
+  }
+
 
  static TextStyle font700Main32(BuildContext context) {
     return context.textStyle.copyWith(
@@ -52,6 +67,14 @@ class AppStyles {
       fontWeight: FontWeightHelper.regular,
       fontFamily: FontFamilyHelper.geLocalozedFontFamily(),
       fontSize: 12.sp,
+    );
+  }
+
+    static TextStyle font500primary18(BuildContext context) {
+    return context.textStyle.copyWith(
+      fontWeight: FontWeightHelper.medium,
+      fontFamily: FontFamilyHelper.geLocalozedFontFamily(),
+      fontSize: 18.sp,
     );
   }
 }

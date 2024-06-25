@@ -34,6 +34,7 @@ flutter:
   assets:
     # Path to onboarding images
     - assets/images/onboarding/
+    - assets/images/home/
     - lang/ar.json
     - lang/en.json
 
