@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tech_savvy/features/authentication/screens/login_screen.dart';
 import 'package:tech_savvy/features/authentication/screens/sign_up_screen.dart';
+import 'package:tech_savvy/features/home/ui/screens/home_screen.dart';
 import 'package:tech_savvy/features/onboarding/ui/screens/on_boarding_screen.dart';
 
 class AppRoutes {
@@ -19,6 +20,10 @@ class AppRoutes {
 
       case '/singUp':
         return MaterialPageRoute(builder: (_) => const SignUpScreen(),
+        );
+
+      case '/home':
+        return MaterialPageRoute(builder: (_) => const HomeScreen(),
         );
 
       default:

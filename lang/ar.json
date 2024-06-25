@@ -17,5 +17,18 @@
   "agree_terms": "بإنشاء حساب، عليك الموافقة على الشروط والأحكام الخاصة بنا.",
   "already_have_account": "هل لديك حساب بالفعل؟",
   "forget_password": "نسيت كلمة المرور؟",
-  "dont_have_account": "ليس لديك حساب؟"
+  "dont_have_account": "ليس لديك حساب؟",
+  "lets_start_learning": "لنبدأ التعلم",
+  "learned_today": "تعلمت اليوم",
+  "my_courses": "دوراتي",
+  "what_do_you_want_to_learn_today": "ماذا تريد أن تتعلم اليوم؟",
+  "get_started": "ابدأ",
+  "learning_plan": "خطة التعلم",
+  "meetup": "اجتماع",
+  "offline_exchange_of_learning_experiences": "تبادل الخبرات التعليمية بشكل غير متصل",
+  "home": "الرئيسية",
+  "course": "دورة",
+  "search": "بحث",
+  "message": "رسالة",
+  "account": "الحساب"
 }

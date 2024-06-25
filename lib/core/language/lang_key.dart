@@ -18,4 +18,17 @@ class LangKeys {
   static const String alreadyHaveAccount = 'already_have_account';
   static const String forgetPassword = 'forget_password';
   static const String dontHaveAccount = 'dont_have_account';
+  static const String letsStartLearning = 'lets_start_learning';
+  static const String learnedToday = 'learned_today';
+  static const String myCourses = 'my_courses';
+  static const String whatDoYouWantToLearnToday = 'what_do_you_want_to_learn_today';
+  static const String getStarted = 'get_started';
+  static const String learningPlan = 'learning_plan';
+  static const String meetup = 'meetup';
+  static const String offlineExchangeOfLearningExperiences = 'offline_exchange_of_learning_experiences';
+  static const String home = 'home';
+  static const String course = 'course';
+  static const String search = 'search';
+  static const String message = 'message';
+  static const String account = 'account';
 }
