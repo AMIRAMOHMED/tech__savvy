@@ -7,7 +7,7 @@ class MainMessageScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return (Center(
         child: Container(
-      child: Text('Account Screen'),
+      child: Text("main message screen"),
     )));
   }
 }
