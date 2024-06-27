@@ -113,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           buttonWidth: 250.w,
                           buttonHeight: 60.h,
                           onPressed: () {
-                            context.pushReplacementNamed(home);
+                            context.pushReplacementNamed(maiin);
                           },
                           buttonText: context.translate(LangKeys.logIn),
                           textStyle: AppStyles.font500primary16(context)

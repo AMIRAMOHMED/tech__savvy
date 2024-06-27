@@ -1,16 +1,9 @@
 const String onBoarding = '/';
-
 const String login = '/login';
-
 const String singUp = '/singUp';
-
 const String home = '/home';
-
-
-
-
-
-
-
-
-
+const String maiin = '/main';
+const String course = '/course';
+const String search = '/search';
+const String message = '/message';
+const String account = '/account';

@@ -15,7 +15,7 @@ class HomeTopBar extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20.sp),
       width: double.infinity,
-      height: 200.h,
+      height: 175.h,
       color: context.color.blueColor,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

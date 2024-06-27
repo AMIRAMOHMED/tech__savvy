@@ -4,6 +4,7 @@ import 'package:tech_savvy/core/style/color/colors_light.dart';
 
 class MyColors extends ThemeExtension<MyColors> {
   const MyColors({
+    required this.bottomNavigationBar,
     required this.backGround2,
     required this.mainFontColor2,
     required this.textButtomColor2,
@@ -21,6 +22,7 @@ class MyColors extends ThemeExtension<MyColors> {
   });
 
   final Color? backGround;
+  final Color? bottomNavigationBar;
   final Color? fillTextFeildColor;
   final Color? borderColor;
   final Color? mainFontColor;
@@ -37,6 +39,7 @@ class MyColors extends ThemeExtension<MyColors> {
 
   @override
   ThemeExtension<MyColors> copyWith({
+    Color? bottomNavigationBar,
     Color? textButtomColor2,
     Color? borderColor,
     Color? backGround,
@@ -53,6 +56,7 @@ class MyColors extends ThemeExtension<MyColors> {
     Color? backGround3,
   }) {
     return MyColors(
+      bottomNavigationBar: bottomNavigationBar ?? this.bottomNavigationBar,
       backGround3: backGround3 ?? this.backGround3,
       fillTextFeildColor: fillTextFeildColor ?? this.fillTextFeildColor,
       borderColor: borderColor ?? this.borderColor,
@@ -80,6 +84,8 @@ class MyColors extends ThemeExtension<MyColors> {
     }
 
     return MyColors(
+      bottomNavigationBar:
+          Color.lerp(bottomNavigationBar, other.bottomNavigationBar, t),
       backGround3: Color.lerp(backGround3, other.backGround3, t),
       fillTextFeildColor: Color.lerp(
         fillTextFeildColor,
@@ -114,6 +120,7 @@ class MyColors extends ThemeExtension<MyColors> {
     backGround2: ColorsDark.darkGrey,
     textButtomColor2: ColorsDark.lightGrey,
     backGround: ColorsDark.navyBlue,
+    bottomNavigationBar: ColorsLight.palePurple,
     mainFontColor: ColorsDark.lightPurple,
     primaryFontColor: ColorsDark.white,
     seconderyFontColor: ColorsDark.lightGrey,
@@ -128,6 +135,7 @@ class MyColors extends ThemeExtension<MyColors> {
 
   static const MyColors light = MyColors(
     fillTextFeildColor: ColorsDark.white,
+    bottomNavigationBar: ColorsLight.palePurple,
     backGround3: ColorsLight.lighterGray,
     borderColor: ColorsLight.palePurple,
     backGround2: ColorsLight.white,
