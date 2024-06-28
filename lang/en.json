@@ -30,5 +30,6 @@
   "course": "Course",
   "search": "Search",
   "message": "Message",
-  "account": "Account"
+  "account": "Account",
+  "min":"min"
 }
