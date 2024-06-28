@@ -4,8 +4,8 @@ import 'package:tech_savvy/core/extension/context_extension.dart';
 import 'package:tech_savvy/core/language/lang_key.dart';
 import 'package:tech_savvy/core/routs/routes_models.dart';
 import 'package:tech_savvy/core/style/fonts/app_styles.dart';
-import 'package:tech_savvy/core/widgets/app_text_buttom.dart';
 import 'package:tech_savvy/core/widgets/app_text.dart';
+import 'package:tech_savvy/core/widgets/app_text_buttom.dart';
 
 class OnboardingBody extends StatelessWidget {
   const OnboardingBody({

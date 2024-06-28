@@ -15,7 +15,7 @@ class HomeTopBar extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20.sp),
       width: double.infinity,
-      height: 200.h,
+      height: 170.h,
       color: context.color.blueColor,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -29,7 +29,7 @@ class HomeTopBar extends StatelessWidget {
                 style: AppStyles.font700Main26(context)
                     .copyWith(color: ColorsDark.white),
               ),
-              SizedBox(height: 10.h),
+              SizedBox(height: 3.h),
               TextApp(
                 text: context.translate(LangKeys.letsStartLearning),
                 style: AppStyles.font400primary14(context)

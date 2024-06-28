@@ -31,4 +31,5 @@ class LangKeys {
   static const String search = 'search';
   static const String message = 'message';
   static const String account = 'account';
+  static const String min ="min";
 }
