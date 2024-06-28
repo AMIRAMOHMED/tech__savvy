@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tech_savvy/core/extension/context_extension.dart';
 import 'package:tech_savvy/core/language/lang_key.dart';
+import 'package:tech_savvy/core/style/color/colors_light.dart';
 import 'package:tech_savvy/core/style/fonts/app_styles.dart';
 import 'package:tech_savvy/core/widgets/app_text.dart';
 import 'package:tech_savvy/features/home/ui/widgets/home_container_course.dart';
@@ -23,12 +24,18 @@ class HomeCourseListView extends StatelessWidget {
             },
           ),
         ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.sp),
-          child: TextApp(
-            text: context.translate(LangKeys.whatDoYouWantToLearnToday),
-            style: AppStyles.font500primary18(context).copyWith(
-              color: context.color.mainFontColor2,
+        Positioned(
+          top: 10.h,
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.sp),
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: TextApp(
+                text: context.translate(LangKeys.whatDoYouWantToLearnToday),
+                style: AppStyles.font400primary16(context).copyWith(
+                  color: ColorsLight.black,
+                ),
+              ),
             ),
           ),
         ),
