@@ -31,5 +31,21 @@
   "search": "Search",
   "message": "Message",
   "account": "Account",
-  "min":"min"
+  "min": "min",
+  "find_course": "Find Course",
+  "painting": "Painting",
+  "choice_your_course": "Choice your course",
+  "product_design_v1_0": "Product Design v1.0",
+  "robertson_connie": "Robertson Connie",
+  "16_hours": "16 hours",
+  "search_filter": "Search Filter",
+  "categories": "Categories",
+  "mathematics": "Mathematics",
+  "visual_identity": "Visual Identity",
+  "price": "Price",
+  "duration": "Duration",
+  "24_30_hours": "24-30 Hours",
+  "apply_filter": "Apply Filter",
+  "clear": "Clear",
+  "results": "Results"
 }

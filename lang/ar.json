@@ -31,6 +31,23 @@
   "search": "بحث",
   "message": "رسالة",
   "account": "الحساب",
-  "min":"دقيقه"
+  "min":"دقيقه",
+  "find_course": "اعثر على دورة",
+  "painting": "رسم",
+  "choice_your_course": "اختر دورتك",
+  "product_design_v1_0": "تصميم المنتج v1.0",
+  "robertson_connie": "روبرتسون كوني",
+  "16_hours": "16 ساعة",
+  "search_filter": "مرشح البحث",
+  "categories": "فئات",
+  "mathematics": "رياضيات",
+  "visual_identity": "الهوية البصرية",
+  "price": "السعر",
+  "duration": "المدة",
+  "24_30_hours": "24-30 ساعة",
+  "apply_filter": "تطبيق الفلتر",
+  "clear": "مسح",
+  "results": "النتائج"
+
   
 }
