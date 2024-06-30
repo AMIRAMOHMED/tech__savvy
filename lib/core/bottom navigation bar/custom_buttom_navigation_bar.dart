@@ -15,6 +15,7 @@ class CustomBottomNavBar extends StatelessWidget {
     return ConvexAppBar(
       activeColor: ColorsDark.blue,
       style: TabStyle.fixed,
+      
       color: context.color.bottomNavigationBar,
       backgroundColor: context.color.backGround2,
       items: [

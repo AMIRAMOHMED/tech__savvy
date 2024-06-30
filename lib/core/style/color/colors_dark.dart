@@ -5,7 +5,9 @@ class ColorsDark {
   static const Color white = Color(0xFFFFFFFF); // White
   static const Color blue = Color.fromRGBO(61, 92, 255, 1); // Blue (repeated)
   static const Color grey = Color(0xFF858597); // Grey
-  static const Color lightGrey = Color(0xFFF4F3FD); // Light grey
+  static const Color lightGrey = Color(0xFF626283); // Grey
+
+  static const Color lighterGrey = Color(0xFFF4F3FD); // Light grey
   static const Color palePurple = Color(0xFFB8B8D2); // Pale purple
   static const Color darkGrey = Color(0xFF2F2F42); // Dark grey
   static const Color navyBlue = Color(0xFF1F1F39); // Navy blue (repeated)

@@ -25,7 +25,7 @@ class ProgressIndicatorRow extends StatelessWidget {
           width: 24.w,
           child: CircularProgressIndicator(
             value: currentValue / maxValue,
-            backgroundColor: ColorsDark.lightGrey,
+            backgroundColor: ColorsDark.lighterGrey,
             valueColor:
                 const AlwaysStoppedAnimation<Color>(ColorsLight.darkGrey),
             strokeWidth: 3.w,

@@ -31,7 +31,7 @@ class HomeLearnedTodayContainer extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color: SharedPref().getBoolean(PrefKeys.themeMode)!
-                  ? ColorsDark.lightGrey.withOpacity(.15)
+                  ? ColorsDark.lighterGrey.withOpacity(.15)
                   : ColorsLight.lightGrey,
               spreadRadius: 2,
               blurRadius: 8,
@@ -94,7 +94,7 @@ class HomeLearnedTodayContainer extends StatelessWidget {
             LinearProgressIndicator(
               minHeight: 5.h,
               value: achiveValue / targetValue,
-              backgroundColor: ColorsDark.lightGrey,
+              backgroundColor: ColorsDark.lighterGrey,
               valueColor:
                   const AlwaysStoppedAnimation<Color>(ColorsLight.orange),
             ),

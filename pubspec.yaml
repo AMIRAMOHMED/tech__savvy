@@ -36,6 +36,7 @@ flutter:
     # Path to onboarding images
     - assets/images/onboarding/
     - assets/images/home/
+    - assets/images/searchbaricons/
     - lang/ar.json
     - lang/en.json
 

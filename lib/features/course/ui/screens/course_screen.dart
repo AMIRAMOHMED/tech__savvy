@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tech_savvy/features/course/ui/widgets/course_screen_app_bar.dart';
 
 class CourseScreen extends StatelessWidget {
@@ -6,14 +7,20 @@ class CourseScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(
-        child: SizedBox(
-          width: double.infinity,
-          child: Column(
-            children: [
-              CourseScreenAppBar(),
-            ],
+    return GestureDetector(
+      onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+      child: Scaffold(
+        body: SafeArea(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.sp),
+            child: const SizedBox(
+              width: double.infinity,
+              child: Column(
+                children: [
+                  CourseScreenAppBar(),
+                ],
+              ),
+            ),
           ),
         ),
       ),
