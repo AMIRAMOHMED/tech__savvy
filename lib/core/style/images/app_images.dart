@@ -31,4 +31,6 @@ class AppImages {
   //course category
   static const String category1 = 'assets/images/coursecategory/langouge.png';
   static const String category2 = 'assets/images/coursecategory/paint.png';
+  static const String courses='assets/images/coursecategory/course.jpg';
+  static const String personIcon='assets/images/coursecategory/person_icon.png';
 }
