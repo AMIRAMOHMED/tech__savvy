@@ -21,15 +21,34 @@ class LangKeys {
   static const String letsStartLearning = 'lets_start_learning';
   static const String learnedToday = 'learned_today';
   static const String myCourses = 'my_courses';
-  static const String whatDoYouWantToLearnToday = 'what_do_you_want_to_learn_today';
+  static const String whatDoYouWantToLearnToday =
+      'what_do_you_want_to_learn_today';
   static const String getStarted = 'get_started';
   static const String learningPlan = 'learning_plan';
   static const String meetup = 'meetup';
-  static const String offlineExchangeOfLearningExperiences = 'offline_exchange_of_learning_experiences';
+  static const String offlineExchangeOfLearningExperiences =
+      'offline_exchange_of_learning_experiences';
   static const String home = 'home';
   static const String course = 'course';
   static const String search = 'search';
   static const String message = 'message';
   static const String account = 'account';
-  static const String min ="min";
+  static const String min = 'min';
+  static const String findCourse = 'find_course';
+
+  static const String painting = 'painting';
+  static const String choiceYourCourse = 'choice_your_course';
+  static const String productDesignV1_0 = 'product_design_v1_0';
+  static const String robertsonConnie = 'robertson_connie';
+  static const String sixteenHours = '16_hours';
+  static const String searchFilter = 'search_filter';
+  static const String categories = 'categories';
+  static const String mathematics = 'mathematics';
+  static const String visualIdentity = 'visual_identity';
+  static const String price = 'price';
+  static const String duration = 'duration';
+  static const String twentyFourThirtyHours = '24_30_hours';
+  static const String applyFilter = 'apply_filter';
+  static const String clear = 'clear';
+  static const String results = 'results';
 }

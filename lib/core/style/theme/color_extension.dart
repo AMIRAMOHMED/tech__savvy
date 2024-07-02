@@ -19,6 +19,7 @@ class MyColors extends ThemeExtension<MyColors> {
     required this.fillTextFeildColor,
     required this.borderColor,
     required this.backGround3,
+    required this.searchBarcolor,
   });
 
   final Color? backGround;
@@ -37,6 +38,8 @@ class MyColors extends ThemeExtension<MyColors> {
   final Color? mainFontColor2;
   final Color? backGround3;
 
+  final Color? searchBarcolor;
+
   @override
   ThemeExtension<MyColors> copyWith({
     Color? bottomNavigationBar,
@@ -54,6 +57,7 @@ class MyColors extends ThemeExtension<MyColors> {
     Color? backGround2,
     Color? mainFontColor2,
     Color? backGround3,
+    Color? searchBarcolor,
   }) {
     return MyColors(
       bottomNavigationBar: bottomNavigationBar ?? this.bottomNavigationBar,
@@ -71,6 +75,7 @@ class MyColors extends ThemeExtension<MyColors> {
       blueColor: blueColor ?? this.blueColor,
       textButtomColor: textButtomColor ?? this.textButtomColor,
       hintTextColor: hintTextColor ?? this.hintTextColor,
+      searchBarcolor: searchBarcolor ?? this.searchBarcolor,
     );
   }
 
@@ -109,6 +114,7 @@ class MyColors extends ThemeExtension<MyColors> {
         other.seconderyFontColor,
         t,
       ),
+      searchBarcolor: Color.lerp(searchBarcolor, other.searchBarcolor, t),
       blueColor: Color.lerp(blueColor, other.blueColor, t),
       textButtomColor: Color.lerp(textButtomColor, other.textButtomColor, t),
       hintTextColor: Color.lerp(hintTextColor, other.hintTextColor, t),
@@ -116,22 +122,22 @@ class MyColors extends ThemeExtension<MyColors> {
   }
 
   static const MyColors dark = MyColors(
-    borderColor: ColorsDark.steelGrey,
-    backGround2: ColorsDark.darkGrey,
-    textButtomColor2: ColorsDark.lightGrey,
-    backGround: ColorsDark.navyBlue,
-    bottomNavigationBar: ColorsLight.palePurple,
-    mainFontColor: ColorsDark.lightPurple,
-    primaryFontColor: ColorsDark.white,
-    seconderyFontColor: ColorsDark.lightGrey,
-    blueColor: ColorsDark.blue,
-    textButtomColor: ColorsDark.lightGrey,
-    hintTextColor: ColorsDark.palePurple,
-    buttomColor: ColorsDark.grey,
-    mainFontColor2: ColorsDark.white,
-    backGround3: ColorsLight.navyBlue,
-    fillTextFeildColor: ColorsDark.steelGrey,
-  );
+      borderColor: ColorsDark.steelGrey,
+      backGround2: ColorsDark.darkGrey,
+      textButtomColor2: ColorsDark.lighterGrey,
+      backGround: ColorsDark.navyBlue,
+      bottomNavigationBar: ColorsLight.palePurple,
+      mainFontColor: ColorsDark.lightPurple,
+      primaryFontColor: ColorsDark.white,
+      seconderyFontColor: ColorsDark.lighterGrey,
+      blueColor: ColorsDark.blue,
+      textButtomColor: ColorsDark.lighterGrey,
+      hintTextColor: ColorsDark.palePurple,
+      buttomColor: ColorsDark.grey,
+      mainFontColor2: ColorsDark.white,
+      backGround3: ColorsLight.navyBlue,
+      fillTextFeildColor: ColorsDark.steelGrey,
+      searchBarcolor: ColorsDark.lightGrey);
 
   static const MyColors light = MyColors(
     fillTextFeildColor: ColorsDark.white,
@@ -149,5 +155,6 @@ class MyColors extends ThemeExtension<MyColors> {
     buttomColor: ColorsLight.white,
     textButtomColor2: ColorsLight.blue,
     mainFontColor2: ColorsLight.black,
+    searchBarcolor: ColorsLight.lightPurple,
   );
 }

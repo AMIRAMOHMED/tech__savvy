@@ -4,9 +4,9 @@ import 'package:tech_savvy/core/extension/context_extension.dart';
 import 'package:tech_savvy/core/language/lang_key.dart';
 import 'package:tech_savvy/core/style/fonts/app_styles.dart';
 import 'package:tech_savvy/core/widgets/app_text.dart';
-import 'package:tech_savvy/features/home/ui/widgets/home_learned_today_container.dart';
 import 'package:tech_savvy/features/home/ui/widgets/home_course_list_view.dart';
 import 'package:tech_savvy/features/home/ui/widgets/home_group_container.dart';
+import 'package:tech_savvy/features/home/ui/widgets/home_learned_today_container.dart';
 import 'package:tech_savvy/features/home/ui/widgets/home_learning_plan_card.dart';
 import 'package:tech_savvy/features/home/ui/widgets/home_top_bar.dart';
 

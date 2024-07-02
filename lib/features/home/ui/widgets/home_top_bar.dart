@@ -38,10 +38,10 @@ class HomeTopBar extends StatelessWidget {
             ],
           ),
           CircleAvatar(
+            radius: 25.r,
             child: Image.asset(
               AppImages.profile,
-              height: 120.h,
-              width: 80.w,
+             
             ),
           ),
         ],

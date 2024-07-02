@@ -21,7 +21,7 @@ class HomeLearningPlanCard extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color: SharedPref().getBoolean(PrefKeys.themeMode)!
-                  ? ColorsDark.lightGrey.withOpacity(.15)
+                  ? ColorsDark.lighterGrey.withOpacity(.15)
                   : ColorsLight.lightGrey,
               spreadRadius: 2,
               blurRadius: 8,
