@@ -35,8 +35,13 @@ flutter:
   assets:
     # Path to onboarding images
     - assets/images/onboarding/
+      # Path to home images
     - assets/images/home/
+      # Path to searchbar images
     - assets/images/searchbaricons/
+      # Path to course category images
+    - assets/images/coursecategory/
+      # Path to languages
     - lang/ar.json
     - lang/en.json
 

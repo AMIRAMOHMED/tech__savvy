@@ -27,4 +27,8 @@ class AppImages {
   static const String deletIcon = 'assets/images/searchbaricons/delet_icon.png';
   static const String filterIcon =
       'assets/images/searchbaricons/filter_icon.png';
+
+  //course category
+  static const String category1 = 'assets/images/coursecategory/langouge.png';
+  static const String category2 = 'assets/images/coursecategory/paint.png';
 }
