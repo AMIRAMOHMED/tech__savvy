@@ -19,7 +19,7 @@ class CourseHeroImageContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: isVideoPlaying ? double.infinity : 230.h,
+      height: 230.h,
       decoration: BoxDecoration(
         image: !isVideoPlaying
             ? const DecorationImage(
@@ -61,7 +61,7 @@ class CourseHeroImageContainer extends StatelessWidget {
             )
           : VideoPlayerItem(
               videoAssets: AppImages.testVideo,
-              height: isVideoPlaying ? double.infinity : 230.h,
+              height: 230.h,
             ),
     );
   }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tech_savvy/core/extension/context_extension.dart';
 import 'package:tech_savvy/core/language/lang_key.dart';
+import 'package:tech_savvy/core/routs/routes_models.dart';
 import 'package:tech_savvy/core/shared_perfernce/shared_key.dart';
 import 'package:tech_savvy/core/shared_perfernce/shared_perfernce.dart';
 import 'package:tech_savvy/core/style/color/colors_dark.dart';
@@ -61,10 +62,12 @@ class CourseBottomNavigationBar extends StatelessWidget {
             ),
           ),
           AppTextButton(
-            onPressed: () {},
+            onPressed: () {
+              context.pushName(payment);
+            },
             buttonWidth: 180.w,
             buttonHeight: 60.h,
-            buttonText: context.translate(LangKeys.course),
+            buttonText: context.translate(LangKeys.buyNow),
             textStyle: AppStyles.font500primary16(context)
                 .copyWith(color: context.color.textButtomColor),
           ),

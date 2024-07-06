@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tech_savvy/core/extension/context_extension.dart';
 import 'package:tech_savvy/core/language/lang_key.dart';
 import 'package:tech_savvy/core/style/color/colors_dark.dart';
-import 'package:tech_savvy/core/style/color/colors_light.dart';
 import 'package:tech_savvy/core/style/fonts/app_styles.dart';
 import 'package:tech_savvy/core/style/images/app_images.dart';
 import 'package:tech_savvy/core/widgets/app_text.dart';

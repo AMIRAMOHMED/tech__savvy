@@ -51,4 +51,11 @@ class LangKeys {
   static const String applyFilter = 'apply_filter';
   static const String clear = 'clear';
   static const String results = 'results';
+   static const String buyNow = 'buy_now';
+  static const String myCard = 'my_card';
+  static const String payNow = 'pay_now';
+  static const String paymentPassword = 'payment_password';
+  static const String enterPaymentPassword = 'enter_payment_password';
+  static const String successfulPurchase = 'successful_purchase';
+
 }

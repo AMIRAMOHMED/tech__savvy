@@ -18,9 +18,8 @@ class CourseDetails extends StatelessWidget {
         height: double.infinity,
         width: double.infinity,
         decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(context.assets.curvedBackground!),
-          ),
+          color: context.color.backGround2,
+          
         ),
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.w),

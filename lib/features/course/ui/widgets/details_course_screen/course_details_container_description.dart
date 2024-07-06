@@ -14,7 +14,9 @@ class CourseDetailsContainerDescription extends StatelessWidget {
       children: [
         TextApp(
           text: 'About the course',
-          style: AppStyles.font700Main22(context),
+          style: AppStyles.font700Main22(context).copyWith(
+            color: context.color.mainFontColor2,
+          ),
         ),
         SizedBox(height: 5.h),
         TextApp(

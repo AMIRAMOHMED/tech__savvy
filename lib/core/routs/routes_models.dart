@@ -8,3 +8,4 @@ const String search = '/search';
 const String message = '/message';
 const String account = '/account';
 const String courseDetails = '/courseDetails';
+const String payment = '/payment';
