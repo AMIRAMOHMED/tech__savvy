@@ -47,7 +47,13 @@
   "24_30_hours": "24-30 ساعة",
   "apply_filter": "تطبيق الفلتر",
   "clear": "مسح",
-  "results": "النتائج"
+  "results": "النتائج",
+  "buy_now": "اشتري الآن",
+  "my_card": "بطاقتي",
+  "pay_now": "ادفع الآن",
+  "payment_password": "كلمة مرور الدفع",
+  "enter_payment_password": "الرجاء إدخال كلمة مرور الدفع",
+  "successful_purchase": "تم الشراء بنجاح!"
 
   
 }

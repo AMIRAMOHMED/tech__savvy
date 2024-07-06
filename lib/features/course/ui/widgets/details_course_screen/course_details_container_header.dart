@@ -13,7 +13,8 @@ class CourseDetailsContainerHeader extends StatelessWidget {
       children: [
         TextApp(
           text: context.translate(LangKeys.productDesignV1_0),
-          style: AppStyles.font700Main22(context).copyWith(color: Colors.black),
+          style: AppStyles.font700Main22(context).copyWith(
+            color: context.color.mainFontColor2,),
         ),
         const Spacer(),
         TextApp(

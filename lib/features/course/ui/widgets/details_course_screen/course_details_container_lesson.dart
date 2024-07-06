@@ -27,7 +27,7 @@ class CourseDetailsContainerLesson extends StatelessWidget {
             TextApp(
               text: 'Welcome To Courseeeeee',
               style: AppStyles.font400primary14(context)
-                  .copyWith(color: context.color.mainFontColor),
+                  .copyWith(color: context.color.mainFontColor2),
             ),
             Row(
               children: [

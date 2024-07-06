@@ -47,5 +47,11 @@
   "24_30_hours": "24-30 Hours",
   "apply_filter": "Apply Filter",
   "clear": "Clear",
-  "results": "Results"
+  "results": "Results",
+  "buy_now": "Buy Now",
+  "my_card": "My Card",
+  "pay_now": "Pay Now",
+  "payment_password": "Payment Password",
+  "enter_payment_password": "Please enter the payment password",
+  "successful_purchase": "Successful purchase!"
 }
