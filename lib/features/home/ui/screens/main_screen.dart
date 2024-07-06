@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tech_savvy/core/bottom%20navigation%20bar/bottom_navigation_bar_cubit.dart';
 import 'package:tech_savvy/core/bottom%20navigation%20bar/custom_buttom_navigation_bar.dart';
 import 'package:tech_savvy/features/account/ui/srcreens/account_screen.dart';
-import 'package:tech_savvy/features/course/ui/screens/course_screen.dart';
+import 'package:tech_savvy/features/course/ui/screens/main_course_screen.dart';
 import 'package:tech_savvy/features/home/ui/screens/home_screen.dart';
 import 'package:tech_savvy/features/messages/ui/screens/main_message_screen.dart';
 import 'package:tech_savvy/features/search/ui/screens/search_screen.dart';
@@ -22,7 +22,7 @@ class MainScreen extends StatelessWidget {
               case NavigationState.home:
                 return const HomeScreen();
               case NavigationState.course:
-                return const CourseScreen();
+                return const MainCourseScreen();
               case NavigationState.search:
                 return const SearchScreen();
               case NavigationState.message:

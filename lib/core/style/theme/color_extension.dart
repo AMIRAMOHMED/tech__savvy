@@ -128,7 +128,7 @@ class MyColors extends ThemeExtension<MyColors> {
       backGround: ColorsDark.navyBlue,
       bottomNavigationBar: ColorsLight.palePurple,
       mainFontColor: ColorsDark.lightPurple,
-      primaryFontColor: ColorsDark.white,
+      primaryFontColor: ColorsDark.palePurple,
       seconderyFontColor: ColorsDark.lighterGrey,
       blueColor: ColorsDark.blue,
       textButtomColor: ColorsDark.lighterGrey,

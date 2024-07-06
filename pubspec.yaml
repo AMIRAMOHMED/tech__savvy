@@ -11,6 +11,7 @@ environment:
 dependencies:
   bloc: ^8.1.4
   build_runner: ^2.4.11
+  chewie: ^1.8.1
   convex_bottom_bar: ^3.2.0
   cupertino_icons: ^1.0.6
   flutter:
@@ -23,25 +24,34 @@ dependencies:
   freezed: ^2.4.5
   freezed_annotation: ^2.4.1
   get_it: ^7.7.0
+  logging: ^1.2.0
   shared_preferences: ^2.2.3
   very_good_analysis: ^5.1.0
+  video_player: ^2.9.1
 
 dev_dependencies:
   flutter_lints: ^4.0.0
+  # Testing framework for Flutter
   flutter_test:
     sdk: flutter
 
 flutter:
+  uses-material-design: true
   assets:
     # Path to onboarding images
     - assets/images/onboarding/
-      # Path to home images
+    # Path to home images
     - assets/images/home/
-      # Path to searchbar images
-    - assets/images/searchbaricons/
-      # Path to course category images
+    # Path to icons images
+    - assets/images/icons/
+    # Path to course category images
     - assets/images/coursecategory/
-      # Path to languages
+    # Path to curved background images
+    - assets/images/curvedbackground/
+    # Path to test video
+    - assets/images/test_video/videoTest.mp4
+    
+    # Path to localization files
     - lang/ar.json
     - lang/en.json
 

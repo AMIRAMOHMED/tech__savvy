@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tech_savvy/features/course/ui/widgets/course_category_container.dart';
+import 'package:tech_savvy/features/course/ui/widgets/main_course_screen/course_category_container.dart';
 import 'package:tech_savvy/features/home/data/class/category_class.dart';
 
 class CourseListViewContainer extends StatelessWidget {

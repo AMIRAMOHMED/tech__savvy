@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tech_savvy/core/extension/context_extension.dart';
 import 'package:tech_savvy/core/language/lang_key.dart';
+import 'package:tech_savvy/core/routs/routes_models.dart';
 import 'package:tech_savvy/core/shared_perfernce/shared_key.dart';
 import 'package:tech_savvy/core/shared_perfernce/shared_perfernce.dart';
 import 'package:tech_savvy/core/style/color/colors_dark.dart';
@@ -15,8 +16,10 @@ class CourseConatiner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20.w),
+    return GestureDetector(
+      onTap: () {
+        context.pushName(courseDetails);
+      },
       child: Container(
         decoration: BoxDecoration(
           color: context.color.backGround2,
@@ -24,7 +27,7 @@ class CourseConatiner extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color: SharedPref().getBoolean(PrefKeys.themeMode)!
-                  ? ColorsDark.lighterGrey.withOpacity(.15)
+                  ? ColorsDark.lighterGrey.withOpacity(.01)
                   : ColorsLight.lightGrey,
               spreadRadius: 2,
               blurRadius: 8,
