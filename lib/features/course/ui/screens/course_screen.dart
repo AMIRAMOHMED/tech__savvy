@@ -1,38 +1,44 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tech_savvy/features/course/ui/widgets/course_list_veiw.dart';
-import 'package:tech_savvy/features/course/ui/widgets/course_list_veiw_container.dart';
-import 'package:tech_savvy/features/course/ui/widgets/course_screen_app_bar.dart';
-import 'package:tech_savvy/features/course/ui/widgets/news_popular_all_tab_bar.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'package:tech_savvy/features/course/logic/cubit/video_cubit.dart';
+import 'package:tech_savvy/features/course/ui/widgets/details_course_screen/course_bottom_navigation_bar.dart';
+import 'package:tech_savvy/features/course/ui/widgets/details_course_screen/course_detalis.dart';
+import 'package:tech_savvy/features/course/ui/widgets/details_course_screen/course_hero_image_container.dart';
 
 class CourseScreen extends StatelessWidget {
   const CourseScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
-      child: Scaffold(
-        body: SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.sp),
-            child: SizedBox(
-              width: double.infinity,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const CourseScreenAppBar(),
-                  SizedBox(height: 20.h),
-                  const CourseListViewContainer(),
-                  const NewsPopularAllTabBar(),
-                  const Expanded(child: CourseListVeiw()),
-                  SizedBox(height: 5.h),
-                ],
-              ),
-            ),
+    return Scaffold(
+      body: SafeArea(
+        child: BlocProvider(
+          create: (_) => VideoCubit(),
+          child: Builder(
+            builder: (context) {
+              return BlocBuilder<VideoCubit, VideoState>(
+                builder: (context, state) {
+                  final isVideoPlaying = state.videoPlayerController != null;
+
+                  return SizedBox(
+                    width: double.infinity,
+                    child: Column(
+                      children: [
+                        CourseHeroImageContainer(
+                          isVideoPlaying: isVideoPlaying,
+                        ),
+                        const CourseDetails(),
+                      ],
+                    ),
+                  );
+                },
+              );
+            },
           ),
         ),
       ),
+      bottomNavigationBar: const CourseBottomNavigationBar(),
     );
   }
 }

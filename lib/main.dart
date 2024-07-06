@@ -34,7 +34,6 @@ class TechSavvy extends StatelessWidget {
         designSize: const Size(375, 812),
         minTextAdapt: true,
         child: BlocBuilder<AppCubit, AppState>(
-          
           builder: (context, state) {
             final appCubit = context.read<AppCubit>();
             return MaterialApp(
@@ -44,8 +43,10 @@ class TechSavvy extends StatelessWidget {
               theme: appCubit.isDark ? themDark() : themLight(),
               locale: Locale(appCubit.currentLanguage),
               supportedLocales: AppLocalizationsSetup.supportedLocales,
-              localizationsDelegates: AppLocalizationsSetup.localizationsDelegates,
-              localeResolutionCallback: AppLocalizationsSetup.localeResolutionCallback,
+              localizationsDelegates:
+                  AppLocalizationsSetup.localizationsDelegates,
+              localeResolutionCallback:
+                  AppLocalizationsSetup.localeResolutionCallback,
               home: GestureDetector(
                 onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
                 child: BlocProvider(

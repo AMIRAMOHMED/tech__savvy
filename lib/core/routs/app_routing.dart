@@ -5,6 +5,7 @@ import 'package:tech_savvy/features/account/ui/srcreens/account_screen.dart';
 import 'package:tech_savvy/features/authentication/screens/login_screen.dart';
 import 'package:tech_savvy/features/authentication/screens/sign_up_screen.dart';
 import 'package:tech_savvy/features/course/ui/screens/course_screen.dart';
+import 'package:tech_savvy/features/course/ui/screens/main_course_screen.dart';
 import 'package:tech_savvy/features/home/ui/screens/home_screen.dart';
 import 'package:tech_savvy/features/home/ui/screens/main_screen.dart';
 import 'package:tech_savvy/features/messages/ui/screens/main_message_screen.dart';
@@ -44,9 +45,9 @@ class AppRoutes {
           builder: (_) => const HomeScreen(),
         );
 
-      case '/course':
+      case '/mainCourse':
         return MaterialPageRoute(
-          builder: (_) => const CourseScreen(),
+          builder: (_) => const MainCourseScreen(),
         );
 
       case '/search':
@@ -62,6 +63,11 @@ class AppRoutes {
       case '/account':
         return MaterialPageRoute(
           builder: (_) => const AccountScreen(),
+        );
+
+      case '/courseDetails':
+        return MaterialPageRoute(
+          builder: (_) => const CourseScreen(),
         );
 
       default:

@@ -5,7 +5,7 @@ import 'package:tech_savvy/core/language/lang_key.dart';
 import 'package:tech_savvy/core/style/fonts/app_styles.dart';
 import 'package:tech_savvy/core/style/images/app_images.dart';
 import 'package:tech_savvy/core/widgets/app_text.dart';
-import 'package:tech_savvy/features/course/ui/widgets/course_search_bar.dart';
+import 'package:tech_savvy/features/course/ui/widgets/main_course_screen/course_search_bar.dart';
 
 class CourseScreenAppBar extends StatelessWidget {
   const CourseScreenAppBar({super.key});
